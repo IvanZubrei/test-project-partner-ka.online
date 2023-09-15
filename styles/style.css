@@ -1,0 +1,123 @@
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::backdrop,
+*::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+button{
+  border: none; 
+  outline: none
+}
+
+h1, h2, h3, h4, p{
+  margin: 0;
+}
+
+.container{
+  max-width: 1600px;  
+  margin: 0 auto;
+  background: var(--light-blur-secondary, rgba(245, 247, 250, 0.50)); 
+  backdrop-filter: blur(25px);
+}
+
+.header__content{  
+  padding: 8px 0;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo{
+  padding-right: 24px;
+}
+
+.header__content-block{
+  max-width: 1152px;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;      
+}
+
+.navigation__list{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+}
+
+.navigation__list-link{  
+  color: var(--light-text-main, rgba(0, 0, 0, 0.80));
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%; /* 20px */
+  letter-spacing: 0.4px;
+  padding: 10px 16px;
+  text-transform: capitalize;
+}
+
+.navigation__list-link:hover{
+  color: var(--main-clean-white-ffffff, #ccc5c5);
+}
+
+.header__profile{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.header__phone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px 12px 16px;
+  cursor: pointer;
+}
+
+.header__phone:hover{  
+  background: var(--light-blur-secondary, rgba(220, 225, 231, 0.70));
+}
+
+.header__btn-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+  border-radius: 12px;
+  background: var(--light-theme-primary-accent, #FC3);  
+  cursor: pointer;  
+  color: var(--light-text-main, rgba(0, 0, 0, 0.80));
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%; /* 20px */
+  letter-spacing: 0.4px;
+}
+
+.header__btn-login:hover{
+  background: var(--light-theme-primary-accent, rgb(202, 170, 74));
+}
+
+
+
