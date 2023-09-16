@@ -38,8 +38,7 @@ h1, h2, h3, h4, p{
 .container__content{ 
   position: relative;
   max-width: 1152px; 
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
 .header__content-block{  
@@ -386,23 +385,26 @@ h1, h2, h3, h4, p{
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:614px) {
   .header__logo-nav{
     display: block;    
   }
   
   .navigation__list-link {    
     font-size: 12px;    
-}
+  }
   .title{ 
     font-size: 48px; 
+  }
+  .services__card{
+    width: 150px;    
   }
 }
 
 @media (max-width:400px) {
-  .header__content-block2{
-    display: none;
-  }
+.header__content-block2{
+   display: none;
+}
   
 .header__logo-nav{
   display: flex;    
@@ -415,6 +417,15 @@ h1, h2, h3, h4, p{
 }
 .header__phone{
   display: none;
+}
+.header__profile {
+  align-items: center;
+}
+.header__btn-login{ 
+  width: 154px; 
+  height: 40px;
+  padding: 10px 16px;
+  border-radius: 8px;  
 }
 .header__btn-login{
   margin-right: 24px;
@@ -468,7 +479,8 @@ h1, h2, h3, h4, p{
 .menu-mobile{
   display: flex;
   flex-direction: column;
-  width: 400px;
+  /* width: 400px; */
+  width: 100%;
   position: absolute;
   top: 70px;
   right: 0;
@@ -496,8 +508,37 @@ letter-spacing: 0.7px;
   box-shadow: none;  
 }
 .services__card{
-  width: 170px;
+  width: 165px;
   height: 94px;
 }
+}
+
+@media (max-width:399px) {
+  .header__content-block2{
+    display: none;
+ }
+ .logo{
+  height: 25px;
+ }
+ .header__btn-login {
+  padding: 7px 12px;
+  font-size: 14px;
+ }
+ .menu-mobile{  
+  max-width: 400px;
+}
+.title {
+  font-size: 36px;
+}
+.digital__card-title {
+  width: 200px;
+}
+.digital__card-title {  
+  font-size: 22px;
+}
+ .services__card{
+  width: 125px;
+ }
+  
 }
 
