@@ -1,0 +1,205 @@
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::backdrop,
+*::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+button{
+  border: none; 
+  outline: none
+}
+
+h1, h2, h3, h4, p{
+  margin: 0;
+}
+
+.main{
+  background-image: url(../images/svg/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -62px right ;
+}
+
+.company__container{
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 24px 24px 24px;
+}
+
+.company__info{
+  width: 294px;
+  padding-right:  24px;
+}
+
+.company__info-title{
+  color: var(--light-text-label, rgba(0, 0, 0, 0.40));
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%; /* 15px */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.company__info-list{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.company__info-item{
+  display: flex;
+  align-items: center; 
+  padding: 4px 0; 
+}
+
+.company__info-item-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  border-radius: 8px;
+  background: var(--light-blur-primary, rgba(255, 255, 255, 0.50));
+  box-shadow: 0px 16px 64px 0px rgba(51, 102, 153, 0.08);  
+}
+
+.company__info-item-img{
+  width: 16px;
+}
+
+.company__info-item-img path{
+  fill: #CC9900;  
+}
+
+.company__info-item-link{
+  color: var(--light-text-main, rgba(0, 0, 0, 0.80));
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 20px */
+  letter-spacing: 0.4px;
+}
+
+.company__info-item-link--active{
+  color: var(--light-theme-primary-text, #C90);
+}
+
+.company__container-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.company__agency{
+  position: relative;
+  width: 760px;
+  padding: 64px;
+  margin-right: 122px;
+  margin-bottom: 96px;
+  border-radius: 24px;
+  background: var(--light-blur-primary, rgba(255, 255, 255, 0.50));
+  box-shadow: 0px 16px 64px 0px rgba(51, 102, 153, 0.08);
+}
+
+.company__agency-block-img{
+  position: absolute;
+  top: 65px;
+  right: -115px;
+  width: 270px;
+  height: 190px;
+  border-radius: 24px;
+  background-image: url(../images/img/pic.jpg); 
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.company__agency-title{
+  width: 450px;
+  color: var(--light-text-main, rgba(0, 0, 0, 0.80));
+  font-family: 'Jost', sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 64px */
+  letter-spacing: 1px;
+}
+
+.company__agency-text{
+  width: 534px;
+  color: var(--light-text-subtitle, rgba(0, 0, 0, 0.60));
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 20px */
+  letter-spacing: 0.4px;
+  margin-top: 32px;
+}
+
+.company__we{
+  position: relative;
+  width: 760px;
+  padding: 64px 64px 64px 286px;  
+  border-radius: 24px;
+  background: var(--light-blur-primary, rgba(255, 255, 255, 0.50));
+  box-shadow: 0px 16px 64px 0px rgba(51, 102, 153, 0.08);
+}
+
+.company__we-block-img{
+  position: absolute;
+  top: -40px;
+  left: -115px;
+  width: 320px;
+  height: 240px;
+  border-radius: 24px;
+  border-radius: 24px;
+  background: var(--light-blur-primary, rgba(255, 255, 255, 0.50));
+  box-shadow: 0px 16px 64px 0px rgba(51, 102, 153, 0.08);  
+  background-image: url(../images/svg/workspace.svg); 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company__we-title{
+  color: var(--light-text-main, rgba(0, 0, 0, 0.80));
+  font-family: 'Jost', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 48px */
+  letter-spacing: 0.8px;
+}
+
+.company__we-text{
+  width: 410px;
+  margin-top: 32px;
+  color: var(--light-text-subtitle, rgba(0, 0, 0, 0.60));
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 20px */
+  letter-spacing: 0.4px;
+}

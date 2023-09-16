@@ -287,6 +287,28 @@ h1, h2, h3, h4, p{
   letter-spacing: 0.4px;
 }
 
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 24px;
+  background-color: #948585;
+}
+
+.footer__link{
+  color: var(--light-text-main, rgba(0, 0, 0, 0.80));
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%; /* 20px */
+  letter-spacing: 0.4px;
+}
+
+.footer__link:hover{
+  color: var(--light-text-main, rgba(54, 50, 50, 0.8));
+}
+
 @media (max-width:1199px) {
   .container__content{ 
     max-width: 752px;  
