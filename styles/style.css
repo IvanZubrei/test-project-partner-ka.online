@@ -328,9 +328,7 @@ h1, h2, h3, h4, p{
   .navigation__list-item{
     padding: 10px 16px;
   }
-  .header__logo-nav{
-    justify-content: space-around;    
-  }
+  
   .header__logo{
     justify-content: center;
   }
