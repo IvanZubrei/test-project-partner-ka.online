@@ -447,6 +447,12 @@ h1, h2, h3, h4, p{
   }
 }
 
+@media (max-width:590px) {
+.header__phone{
+  display: none;
+}
+}
+
 @media (max-width:570px) {
 .header__content-block2{
   display: none;
@@ -460,9 +466,7 @@ h1, h2, h3, h4, p{
 .nav{
   display: none;
 }
-.header__phone{
-  display: none;
-}
+
 .header__profile {
   align-items: center;
 }
