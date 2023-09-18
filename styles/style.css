@@ -554,7 +554,7 @@ letter-spacing: 0.7px;
 }
 }
 
-@media (max-width:542px){
+@media (max-width:561px){
   .shop-border-right-none, .promo-border-right-none{
     display: block;
   }
