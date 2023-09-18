@@ -546,13 +546,28 @@ letter-spacing: 0.7px;
   width: 165px;
   height: 94px;
 }
-.promo-border-right-none{
+.blog-border-right-none{
+  display: block;
+}
+.promo-border-right-none, .service-border-right-none{
   display: none;
 }
 }
 
-@media (max-width:497px){
+@media (max-width:542px){
   .shop-border-right-none, .promo-border-right-none{
+    display: block;
+  }
+  .catalog-border-right-none, 
+  .landing-border-right-none,
+  .promo-border-right-none,
+  .blog-border-right-none{
+    display: none;
+  }
+}
+
+@media (max-width:497px){
+  .shop-border-right-none{
     display: block;
   }
   .catalog-border-right-none, .landing-border-right-none{
