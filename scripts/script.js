@@ -47,7 +47,7 @@ const toggleSitesPopup = () => {
   adBackgroundColorActiv.classList.remove("popup-background-color");
   contentPopupOpenClose.classList.remove("popup-open-close"); 
   contentBackgroundColorActiv.classList.remove("popup-background-color");
-}
+};
 
 sitesPopup.addEventListener('click', e => {
   e.stopPropagation();
@@ -72,7 +72,7 @@ const toggleAdPopup = () => {
   sitesBackgroundColorActiv.classList.remove("popup-background-color"); 
   contentPopupOpenClose.classList.remove("popup-open-close"); 
   contentBackgroundColorActiv.classList.remove("popup-background-color");  
-}
+};
 
 adPopup.addEventListener('click', e => {
   e.stopPropagation();
@@ -97,7 +97,7 @@ const toggleContentPopup = () => {
   sitesBackgroundColorActiv.classList.remove("popup-background-color"); 
   adPopupOpenClose.classList.remove("popup-open-close"); 
   adBackgroundColorActiv.classList.remove("popup-background-color");
-}
+};
 
 contentPopup.addEventListener('click', e => {
   e.stopPropagation();
