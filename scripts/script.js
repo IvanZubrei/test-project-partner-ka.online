@@ -11,6 +11,13 @@ const adBackgroundColorActiv = document.querySelector('.ad-background-color');
 const contentPopup = document.querySelector('.content-popup');
 const contentPopupOpenClose = document.querySelector('.header__content-popup');
 const contentBackgroundColorActiv = document.querySelector('.content-background-color');
+const requestPopupOpen = document.querySelector('.header__form-popup')
+const requestPopup = document.querySelector('.header__btn-login');
+const requestPopupClose = document.querySelector('.header__form-block-img');
+const sendRequest = document.querySelector('.header__form-btn');
+const popupApplicationSentOpen = document.querySelector('.header__popup-application-sent');
+const popupApplicationSentClose = document.querySelector('.popup-application-sent-btn');
+
 
 const toggleMenuMobile = () => {
   menuBtn.classList.toggle('close-menu-btn');
@@ -114,3 +121,24 @@ document.addEventListener('click', e => {
     toggleContentPopup();
   }
 });
+
+
+requestPopup.addEventListener('click', () => {
+  requestPopupOpen.classList.add('popup-open-close');;
+});
+
+requestPopupClose.addEventListener('click', () => {
+  requestPopupOpen.classList.remove('popup-open-close');;
+});
+
+sendRequest.addEventListener('click', () => {
+  requestPopupOpen.classList.remove('popup-open-close'); 
+  popupApplicationSentOpen.classList.toggle('popup-open-close');
+});
+
+popupApplicationSentClose.addEventListener('click', () => {  
+  popupApplicationSentOpen.classList.toggle('popup-open-close');
+});
+
+
+
