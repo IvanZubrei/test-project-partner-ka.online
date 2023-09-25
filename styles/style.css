@@ -301,7 +301,7 @@ h1, h2, h3, h4, p{
 
 .popup-application-sent{
   position: absolute;
-  top: 270px;  
+  top: 5px;  
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10; 
@@ -769,7 +769,8 @@ h1, h2, h3, h4, p{
   .services__card{
     width: 150px;    
   }
-  .header__form {
+  .header__form,
+  .popup-application-sent {
     top: 1px;
     width: 560px;
   }
@@ -892,7 +893,8 @@ letter-spacing: 0.7px;
   .blog-border-right-none{
     display: none;
   }
-  .header__form {
+  .header__form,
+  .popup-application-sent {
     width: 320px;
   }
 }

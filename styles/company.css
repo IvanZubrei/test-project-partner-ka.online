@@ -800,7 +800,8 @@ h1, h2, h3, h4, p{
   .company__info {    
     width: 352px
   }  
-  .header__form {
+  .header__form,
+  .popup-application-sent {
     top: 1px;
     width: 560px;
   }
@@ -891,7 +892,8 @@ h1, h2, h3, h4, p{
 }
 
 @media (max-width:561px){  
-  .header__form {
+  .header__form,
+  .popup-application-sent {
     width: 320px;
   }
 }
