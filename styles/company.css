@@ -111,7 +111,7 @@ h1, h2, h3, h4, p{
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: 7;
-  max-width: 600px;
+  width: 600px;
   border-bottom: 1px solid var(--light-border-primary, rgba(0, 0, 0, 0.10));
   background:  #FFF;
 }
@@ -121,6 +121,7 @@ h1, h2, h3, h4, p{
   justify-content: space-between;
   align-items: center;
   padding: 16px 16px 16px 24px;
+  border-bottom: 1px solid var(--light-border-primary, rgba(0, 0, 0, 0.10));
 }
 
 .header__form-block-text{
@@ -799,6 +800,10 @@ h1, h2, h3, h4, p{
   .company__info {    
     width: 352px
   }  
+  .header__form {
+    top: 1px;
+    width: 560px;
+  }
 }
 @media (max-width:590px) {
   .header__phone{
@@ -882,6 +887,12 @@ h1, h2, h3, h4, p{
   }  
   .menu-mobile.menu-open{
     transform: translateY(0%);
+  }
+}
+
+@media (max-width:561px){  
+  .header__form {
+    width: 320px;
   }
 }
 
